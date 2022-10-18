@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isWalking;
 
-    private Vector2 lastDirection;
+    public Vector2 lastDirection;
     private Animator playerAnimator;
 
     private Rigidbody2D playerRigidbody;
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
             /*Another valid logic
             Vector3 translation = new Vector3(0, yInput * speed * Time.deltaTime, 0);
             transform.Translate(translation);*/
-            playerRigidbody.velocity = new Vector2(yInput * speed, 0);
+            playerRigidbody.velocity = new Vector2(0, yInput * speed);
             isWalking = true;
             lastDirection = new Vector2(0, yInput);
         }

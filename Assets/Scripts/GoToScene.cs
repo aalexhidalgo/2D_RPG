@@ -13,7 +13,7 @@ public class GoToScene : MonoBehaviour
     private void Update()
     {
         //Manual teleport: Have to press "Enter" to travel to the other teleport point.
-        if(!isAutomatic &&!manualEnter)
+        if(!isAutomatic && !manualEnter)
         {
             manualEnter = Input.GetButtonDown("Fire1");
         }
