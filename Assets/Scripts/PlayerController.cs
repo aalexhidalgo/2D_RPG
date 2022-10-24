@@ -7,16 +7,17 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     public const string HORIZONTAL = "Horizontal", VERTICAL = "Vertical";
 
-    public static bool playerCreated;
-
     private float inputTol = 0.2f; //Input tolerance
     private float xInput, yInput;
+
+    public static bool playerCreated;
 
     private bool isWalking;
 
     public Vector2 lastDirection;
-    private Animator playerAnimator;
+    public string nextUuid;
 
+    private Animator playerAnimator;
     private Rigidbody2D playerRigidbody;
 
     void Awake()

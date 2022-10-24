@@ -5,13 +5,26 @@ using UnityEngine;
 public class StartPoint : MonoBehaviour
 {
     private PlayerController player;
-    [SerializeField] private Vector2 facingDirection; 
-    // Start is called before the first frame update
+    [SerializeField] private Vector2 facingDirection;
+    public string uuid; //uuid = Universal Unique Identifier
+
     void Start()
     {
+        //Transform the position of the player into the position of the start point
         player = FindObjectOfType<PlayerController>();
+        if (!player.nextUuid.Equals(uuid)) //(== Equals)
+        {
+            return;
+        }
         player.transform.position = transform.position;
-        player.lastDirection = facingDirection;
+        player.lastDirection = facingDirection; //Transform the direction of the player
+
+        GameObject confiner = GameObject.Find("Camera Confiner");
+
+        if (confiner != null)
+        {
+            GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = confiner.GetComponent<PolygonCollider2D>();
+        }
     }
 
     // Update is called once per frame
