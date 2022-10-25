@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93be8762e71063448b42af903c2133fc
+guid: 070eed5b79fc42e4987ed8545787c05e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,85 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_0
+      name: watcher_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 64
         y: 0
-        width: 14
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c24c3758a596b4c83b6bfe999fb93a
-      internalID: -1651182766
+      spriteID: 7b200428e97255540af7c6afa47952fe
+      internalID: -410513801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_1
+      name: watcher_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 14
-        height: 15
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f241b8b30185b249a3ac795046c74d5
-      internalID: 976289776
+      spriteID: 3d21fd5f3e283404a97814acc13f9edb
+      internalID: 627899098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_2
+      name: watcher_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 14
-        height: 15
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3474c6b5bc8573445a6b1abd2554fbaa
-      internalID: 927008791
+      spriteID: 5f54b61e0bc29c24580522044de779a4
+      internalID: 700136828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy_3
+      name: watcher_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 32
         y: 0
-        width: 14
-        height: 15
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae200623007392947bad413a037a4dd4
-      internalID: 594380761
+      spriteID: 07d668b7d84862642b480c660d8d9a10
+      internalID: -2074057089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watcher_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2bf11d448d188439cfb2cadffae975
+      internalID: 817796702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: watcher_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153d7037c88a2074e9e216c305fa2389
+      internalID: -174778057
       vertices: []
       indices: 
       edges: []
@@ -211,10 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      enemy_1: 976289776
-      enemy_2: 927008791
-      enemy_3: 594380761
-      enemy_0: -1651182766
+      watcher_4: 817796702
+      watcher_5: -174778057
+      watcher_0: -410513801
+      watcher_1: 627899098
+      watcher_3: -2074057089
+      watcher_2: 700136828
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,10 +120,10 @@ TextureImporter:
       name: Old enemies 3_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 17
         y: 96
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: Old enemies 3_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 33
         y: 96
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Old enemies 3_2
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 96
-        width: 12
-        height: 5
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,9 +184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 65
-        y: 97
+        y: 96
         width: 14
-        height: 11
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: Old enemies 3_4
       rect:
         serializedVersion: 2
-        x: 18
+        x: 17
         y: 80
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,9 +226,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 81
-        width: 13
-        height: 11
+        y: 80
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: Old enemies 3_6
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 80
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: Old enemies 3_7
       rect:
         serializedVersion: 2
-        x: 66
+        x: 65
         y: 80
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: Old enemies 3_8
       rect:
         serializedVersion: 2
-        x: 82
-        y: 81
-        width: 12
-        height: 11
+        x: 81
+        y: 80
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Old enemies 3_9
       rect:
         serializedVersion: 2
-        x: 98
+        x: 97
         y: 80
-        width: 12
-        height: 11
+        width: 14
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +330,10 @@ TextureImporter:
       name: Old enemies 3_10
       rect:
         serializedVersion: 2
-        x: 18
+        x: 17
         y: 64
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +351,10 @@ TextureImporter:
       name: Old enemies 3_11
       rect:
         serializedVersion: 2
-        x: 34
+        x: 33
         y: 64
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: Old enemies 3_12
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 64
-        width: 12
-        height: 13
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,9 +394,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 65
-        y: 65
+        y: 64
         width: 14
-        height: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: Old enemies 3_14
       rect:
         serializedVersion: 2
-        x: 18
+        x: 17
         y: 48
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,9 +436,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 49
-        width: 13
-        height: 14
+        y: 48
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Old enemies 3_16
       rect:
         serializedVersion: 2
-        x: 50
+        x: 49
         y: 48
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: Old enemies 3_17
       rect:
         serializedVersion: 2
-        x: 66
+        x: 65
         y: 48
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,10 +498,10 @@ TextureImporter:
       name: Old enemies 3_18
       rect:
         serializedVersion: 2
-        x: 82
-        y: 49
-        width: 12
-        height: 14
+        x: 81
+        y: 48
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -519,10 +519,10 @@ TextureImporter:
       name: Old enemies 3_19
       rect:
         serializedVersion: 2
-        x: 98
+        x: 97
         y: 48
-        width: 12
-        height: 14
+        width: 14
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,7 +542,7 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 32
-        width: 32
+        width: 16
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -564,7 +564,7 @@ TextureImporter:
         x: 48
         y: 32
         width: 16
-        height: 5
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -585,7 +585,7 @@ TextureImporter:
         x: 64
         y: 32
         width: 16
-        height: 12
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,7 +606,7 @@ TextureImporter:
         x: 16
         y: 16
         width: 16
-        height: 13
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,10 +624,10 @@ TextureImporter:
       name: Old enemies 3_24
       rect:
         serializedVersion: 2
-        x: 33
-        y: 17
-        width: 14
-        height: 13
+        x: 32
+        y: 16
+        width: 16
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -645,10 +645,10 @@ TextureImporter:
       name: Old enemies 3_25
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 16
-        width: 14
-        height: 13
+        width: 16
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,7 +668,7 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 16
-        width: 48
+        width: 16
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -679,6 +679,69 @@ TextureImporter:
       bones: []
       spriteID: 58a4bd654ac41174c8c361e4f84fec9e
       internalID: 743135174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old enemies 3_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0161f34fa160ff4a819e20c4b0b94f5
+      internalID: 1213249079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old enemies 3_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb8f310234a15c47932f3ac21b9e3f2
+      internalID: 809803598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Old enemies 3_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77221e02ddd300448a94429566f2e06
+      internalID: -726227088
       vertices: []
       indices: 
       edges: []
@@ -703,6 +766,7 @@ TextureImporter:
       Old enemies 3_21: -702508359
       Old enemies 3_17: -1065980204
       Old enemies 3_19: 1281692078
+      Old enemies 3_29: -726227088
       Old enemies 3_25: 1879022172
       Old enemies 3_9: -2140770802
       Old enemies 3_20: -1301765667
@@ -715,7 +779,9 @@ TextureImporter:
       Old enemies 3_3: 1184950639
       Old enemies 3_12: 1752363397
       Old enemies 3_15: 780122018
+      Old enemies 3_27: 1213249079
       Old enemies 3_2: 715962880
+      Old enemies 3_28: 809803598
       Old enemies 3_5: 1720817843
       Old enemies 3_24: 479999611
       Old enemies 3_1: -1467207405

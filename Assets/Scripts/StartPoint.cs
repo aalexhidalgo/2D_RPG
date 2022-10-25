@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class StartPoint : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class StartPoint : MonoBehaviour
 
         if (confiner != null)
         {
-            GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = confiner.GetComponent<PolygonCollider2D>();
+            FindObjectOfType<CinemachineConfiner2D>().m_BoundingShape2D = confiner.GetComponent<PolygonCollider2D>();
         }
     }
 
