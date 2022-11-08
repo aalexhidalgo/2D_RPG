@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DoDamage : MonoBehaviour
 {
-    public float timeToRevivePlayer;
+    /*public float timeToRevivePlayer;
     private float timeRevivalCounter;
     private bool isPlayerReviving;
-    private GameObject player;
+    private GameObject player;*/
+
+    public int damage = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class DoDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPlayerReviving)
+        /*if(isPlayerReviving)
         {
             timeRevivalCounter -= Time.deltaTime;
             if(timeRevivalCounter <= 0)
@@ -26,17 +28,20 @@ public class DoDamage : MonoBehaviour
                 isPlayerReviving = false;
                 player.SetActive(true);
             }
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            player = other.gameObject;
+            /*player = other.gameObject;
             player.SetActive(false);
             isPlayerReviving = true;
-            timeRevivalCounter = timeToRevivePlayer;
+            timeRevivalCounter = timeToRevivePlayer;*/
+
+            //Damage to the player
+            other.gameObject.GetComponent<HealthManager>().DamageCharacter(damage);
 
         }
     }

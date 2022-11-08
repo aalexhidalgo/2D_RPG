@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
         
     }
 
-    public void DamageCharacer(int damage)
+    public void DamageCharacter(int damage)
     {
         currentHealth -= damage;
         if(currentHealth <= 0)
