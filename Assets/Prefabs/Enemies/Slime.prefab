@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5792066399847218910}
   - component: {fileID: 1798507939502069259}
   - component: {fileID: 6574078757325208689}
+  - component: {fileID: 2138894816}
+  - component: {fileID: 2138894823}
   m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
@@ -158,7 +160,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  timeBetweenSteps: 0
-  timeToMakeStep: 0
+  timeBetweenSteps: 3
+  timeToMakeStep: 2
   hasRandomMove: 0
-  enemyDirections: []
+  enemyDirections:
+  - {x: 1, y: 0}
+  - {x: -1, y: 0}
+--- !u!114 &2138894816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792066399847218882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f8c162c2e00e44eac0d0bc0953e67c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &2138894823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5792066399847218882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3edb1440a141b449a276b4ea538440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10

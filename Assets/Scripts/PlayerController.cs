@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
     private Rigidbody2D playerRigidbody;
 
+    public bool isAttacking;
+    [SerializeField] private float attackTime;
+    private float attackTimeCounter;
+
     void Awake()
     {
         playerAnimator = GetComponent<Animator>();
@@ -36,6 +40,49 @@ public class PlayerController : MonoBehaviour
         xInput = Input.GetAxisRaw(HORIZONTAL);
         isWalking = false;
 
+        //Attack: true to false
+        if (isAttacking)
+        {
+            attackTimeCounter -= Time.deltaTime;
+            if (attackTimeCounter < 0)
+            {
+                isAttacking = false;
+            }
+        }
+        //Attack: false to true
+        else if (Input.GetMouseButtonDown(0))
+        {
+            isAttacking = true;
+            attackTimeCounter = attackTime;
+        }
+
+        else
+        {
+            Movement();
+        }
+    }
+
+    private void LateUpdate()
+    {
+        //Animations set by the different states and actions
+
+        playerAnimator.SetFloat(HORIZONTAL, xInput);
+        playerAnimator.SetFloat(VERTICAL, yInput);
+        playerAnimator.SetFloat("LastHorizontal", lastDirection.x);
+        playerAnimator.SetFloat("LastVertical", lastDirection.y);
+        playerAnimator.SetBool("IsWalking", isWalking);
+        playerAnimator.SetBool("IsAttacking", isAttacking);
+
+        //No movement
+
+        if (!isWalking || isAttacking)
+        {
+            playerRigidbody.velocity = Vector2.zero;
+        }
+    }
+
+    private void Movement()
+    {
         //Horizontal Movement
 
         if (Mathf.Abs(xInput) > inputTol)
@@ -58,24 +105,6 @@ public class PlayerController : MonoBehaviour
             playerRigidbody.velocity = new Vector2(0, yInput * speed);
             isWalking = true;
             lastDirection = new Vector2(0, yInput);
-        }
-    }
-
-    private void LateUpdate()
-    {
-        //Animations set by the different states and actions
-
-        playerAnimator.SetFloat(HORIZONTAL, xInput);
-        playerAnimator.SetFloat(VERTICAL, yInput);
-        playerAnimator.SetFloat("LastHorizontal", lastDirection.x);
-        playerAnimator.SetFloat("LastVertical", lastDirection.y);
-        playerAnimator.SetBool("IsWalking", isWalking);
-
-        //No movement
-
-        if(!isWalking)
-        {
-            playerRigidbody.velocity = Vector2.zero;
         }
     }
 }

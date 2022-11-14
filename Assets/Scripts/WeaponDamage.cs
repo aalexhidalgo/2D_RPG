@@ -5,11 +5,27 @@ using UnityEngine;
 public class WeaponDamage : MonoBehaviour
 {
     public int damage;
-    private void OnCollisionEnter2D(Collision2D other)
+
+    public GameObject bloodParticle;
+    private GameObject hitPoint;
+
+    private PlayerController player;
+    void Start()
     {
-        if(other.gameObject.CompareTag("Enemy"))
+        player = FindObjectOfType<PlayerController>();
+        hitPoint = transform.Find("Hit Point").gameObject;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Enemy") && player.isAttacking)
         {
             other.gameObject.GetComponent<HealthManager>().DamageCharacter(damage);
+
+            if (bloodParticle != null && hitPoint != null)
+            {
+                Destroy(Instantiate(bloodParticle, hitPoint.transform.position, hitPoint.transform.rotation), 1.5f);
+            }
         }
     }
 }
