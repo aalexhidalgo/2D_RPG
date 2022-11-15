@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float attackTime;
     private float attackTimeCounter;
 
+    public bool canMove = true;
+
     void Awake()
     {
         playerAnimator = GetComponent<Animator>();
@@ -33,12 +35,18 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerCreated = true;
+        lastDirection = Vector2.down;
     }
 
     void Update()
     {
         xInput = Input.GetAxisRaw(HORIZONTAL);
         isWalking = false;
+
+        if (!canMove)
+        {
+            return;
+        }
 
         //Attack: true to false
         if (isAttacking)
