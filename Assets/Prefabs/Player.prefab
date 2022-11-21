@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4871351382561781627}
+  - component: {fileID: 806494201}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -29,11 +30,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3363452111095812958}
-  - {fileID: 7387525978356737547}
   - {fileID: 8367222038864756257}
+  - {fileID: 7387525978356737547}
   m_Father: {fileID: 7179685715955042861}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806494201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475455966429127087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cde965c4ad1e87468b6c4cca8207827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeWeapon: 0
 --- !u!1 &7179685715955042859
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,6 +64,7 @@ GameObject:
   - component: {fileID: 7179685715955042864}
   - component: {fileID: 7528970740201491258}
   - component: {fileID: 8788882611580659498}
+  - component: {fileID: 6915097660169307724}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -142,6 +157,7 @@ MonoBehaviour:
   nextUuid: 
   isAttacking: 0
   attackTime: 0.6
+  canMove: 1
 --- !u!95 &7179685715955042863
 Animator:
   serializedVersion: 4
@@ -235,6 +251,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   blinkingDuration: 2
+  expWhenDefeated: 0
+--- !u!114 &6915097660169307724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7179685715955042859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66a141d6730ce140ae8148dfe31bc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
+  exp: 0
+  expToLevelUp: 0000000064000000c80000002c01000090010000f401000058020000bc0200002003000084030000e8030000
+  maxHealthLevels: 00000000640000007d00000096000000af000000c8000000fa0000002c0100005e01000090010000f4010000
 --- !u!1001 &5307448473468248665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9125257411052027983, guid: f6cb11375409d034c91118dc0c3826d2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6cb11375409d034c91118dc0c3826d2, type: 3}
@@ -314,7 +347,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 810198434853565905, guid: dcf7ccf62a024c944b7893a23bc72909, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 810198434853565905, guid: dcf7ccf62a024c944b7893a23bc72909, type: 3}
       propertyPath: m_LocalPosition.x
@@ -388,7 +421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 877129922912842338, guid: 0ac607853d53a1c4588bed88b6a4cc1c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 877129922912842338, guid: 0ac607853d53a1c4588bed88b6a4cc1c, type: 3}
       propertyPath: m_LocalPosition.x

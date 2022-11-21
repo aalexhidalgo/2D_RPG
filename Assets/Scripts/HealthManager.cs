@@ -13,6 +13,8 @@ public class HealthManager : MonoBehaviour
     private float blinkingCounter;
     private SpriteRenderer _characterRenderer;
 
+    public int expWhenDefeated;
+
     void Start()
     {
         _characterRenderer = GetComponent<SpriteRenderer>();
@@ -61,6 +63,10 @@ public class HealthManager : MonoBehaviour
         currentHealth -= damage;
         if(currentHealth <= 0)
         {
+            if (gameObject.tag.Equals("Enemy"))
+            {
+                GameObject.Find("Player").GetComponent<CharacterStats>().AddExperience(expWhenDefeated);
+            }
             gameObject.SetActive(false);
         }
 

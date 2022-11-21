@@ -11,7 +11,11 @@ public class WeaponDamage : MonoBehaviour
 
     public GameObject canvasDamageNumber;
 
+    [Tooltip("Index number of the weapon")]
+    public int index;
+
     private PlayerController player;
+
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
