@@ -14,9 +14,12 @@ public class DialogManager : MonoBehaviour
     public string[] dialogLines;
     public int currentDialogLine;
 
+    private PlayerController playerControllerScript;
+
     void Start()
     {
-        HideDialog();
+        playerControllerScript = FindObjectOfType<PlayerController>();
+        HideDialog();        
     }
 
     private void Update()
@@ -44,10 +47,12 @@ public class DialogManager : MonoBehaviour
         isDialogActive = true;
         dialogPanel.SetActive(isDialogActive);
         dialogTextBox.text = dialogLines[currentDialogLine];
+        playerControllerScript.isTalking = true;
     }
 
     public void HideDialog()
     {
+        playerControllerScript.isTalking = false;
         isDialogActive = false;
         dialogPanel.SetActive(isDialogActive);
     }

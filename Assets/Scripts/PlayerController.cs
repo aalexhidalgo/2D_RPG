@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private float attackTimeCounter;
 
     public bool canMove = true;
+    public bool isTalking;
 
     void Awake()
     {
@@ -35,11 +36,17 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerCreated = true;
+        isTalking = false;
         lastDirection = Vector2.down;
     }
 
     void Update()
     {
+        if(isTalking)
+        {
+            playerRigidbody.velocity = Vector2.zero;
+            return;
+        }
         xInput = Input.GetAxisRaw(HORIZONTAL);
         isWalking = false;
 
